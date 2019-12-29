@@ -465,7 +465,8 @@ ol ol{
     padding:40px;
     max-width:864px;
     min-height:100vh;
-    border-right:1px solid hsla(0,0%,100%,.1)
+    text-align:center;
+    margin:auto;
 }
 .container.center,.container.full{
     border:none;
@@ -476,7 +477,9 @@ ol ol{
 }
 @media (max-width:683px){
     .container{
+        max-width:350px;
         padding:20px
+        margin:auto
     }
 }
 .content{
