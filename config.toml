@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "https://rmccarth.info/"
 languageCode = "en-us"
 theme = "hugo-theme-terminal"
 paginate = 5
