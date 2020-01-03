@@ -18,6 +18,10 @@ paginate = 5
   centerTheme = false
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
+  paginatedsections = ["content"]
+[permalinks]
+  
+  content = "/content/:filename"
 
 [languages]
   [languages.en]
@@ -41,5 +45,5 @@ paginate = 5
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "contact"
-        name = "Contact Information"
+        name = "Contact"
         url = "/contact"
