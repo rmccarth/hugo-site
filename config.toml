@@ -1,49 +1,41 @@
-baseurl = "/"
+baseurl = "https://example.com/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "content/"
-  # ["orange", "blue", "red", "green", "pink"]
+  contentTypeName = "post"
   themeColor = "orange"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # show selector to switch language
-  showLanguageSelector = false
-  # set theme to full screen width
+  showMenuItems = 0
   fullWidthTheme = false
-  # center theme with default width
   centerTheme = false
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-  paginatedsections = ["content"]
-[permalinks]
-  
-  content = "/content/:filename"
 
 [languages]
   [languages.en]
-    languageName = "English"
-    title = "Rob McCarthy - rmccarth@andrew.cmu.edu"
-    subtitle = "M.S. Information Security Policy and Management '20"
+    title = "$ whoami"
+    subtitle = "A simple, retro theme for Hugo"
     keywords = ""
     copyright = ""
-    menuMore = "Show more"
+    menuMore = "$ ping localhost"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Rob McCarthy"
+      logoText = "$ whoami"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "publications"
-        name = "Publications"
+        identifier = "about"
+        name = "contact"
         url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
+
+    [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "medium"
+        url = "https://medium.com/@rob.mccarthy31"
+
+    [[languages.en.menu.main]]
+        identifier = "github"
+        name = "github"
+        url = "https://github.com/rmccarth"

@@ -317,7 +317,7 @@ a{
 }
 img{
     display:block;
-    max-width:100%
+    max-width:50%
 }
 img.center,img.left{
     margin-right:auto
@@ -477,9 +477,7 @@ ol ol{
 }
 @media (max-width:683px){
     .container{
-        max-width:350px;
         padding:20px
-        margin:auto
     }
 }
 .content{
@@ -555,7 +553,7 @@ hr{
     border:20px solid #ffa86a;
     border:20px solid var(--accent);
     background:transparent;
-    margin:40px 0;
+    margin:auto;
     padding:20px
 }
 @media (max-width:683px){
