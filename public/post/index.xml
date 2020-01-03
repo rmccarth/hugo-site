@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on $ whoami</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on $ whoami</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rob McCarthy</title>
+      <link>https://example.com/post/hello/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/hello/</guid>
+      <description>A blog about the infosec concepts that I find interesting and/or helpful | M.S. Information Security Policy and Management CMU &amp;lsquo;20
+I work and study at Carnegie Mellon University. My focus areas are penetration testing, technical project management, and documentation. I continue to contribute to open source projects, and have done extensive development work in bash, and python. I am a teaching assistant for a course in low-level code vulnerabilities, web application security, and the SDLC, and have authored an intentionally vulnerable web server from which students can learn.</description>
+    </item>
+    
+  </channel>
+</rss>
