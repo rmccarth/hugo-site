@@ -1,6 +1,6 @@
-baseurl = "https://rmccarth.info"
+baseurl = "https://example.com/"
 languageCode = "en-us"
-theme = "terminal"
+theme = "hugo-theme-terminal"
 paginate = 5
 
 [params]
@@ -12,8 +12,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "rmccarth"
-    subtitle = "MSISPM '20"
+    title = "Terminal"
+    subtitle = "A simple, retro theme for Hugo"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -21,7 +21,7 @@ paginate = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Rob McCarthy"
+      logoText = "Terminal"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -30,6 +30,6 @@ paginate = 5
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "Highlights"
-        name = "Highlights"
-        url = "/highlights"
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"

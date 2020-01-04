@@ -7,9 +7,6 @@ tags = ["blog", "clean", "customizable", "dark", "highlighting", "minimal", "mon
 features = ["blog", "shortcode", "syntax highlighting"]
 min_version = 0.57
 
-[context.production.environment]
-HUGO_VERSION = "0.62"
-
 [author]
   name = "panr"
   homepage = "https://radoslawkoziel.pl"

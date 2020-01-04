@@ -1,14 +1,12 @@
 +++
-title = "Rob McCarthy"
-date = "2020-01-02"
-author = "rmccarth"
-cover = ""
-description = "A blog about the infosec concepts that I find interesting and/or helpful | M.S. Information Security Policy and Management"
+title = "Hello Friend"
+date = "2019-01-25"
+author = "Lorem Ipsum"
+cover = "hello.jpg"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante."
 +++
 
-A blog about the infosec concepts that I find interesting and/or helpful | M.S. Information Security Policy and Management CMU '20
-
-I work and study at Carnegie Mellon University. My focus areas are penetration testing, technical project management, and documentation. I continue to contribute to open source projects, and have done extensive development work in bash, and python. I am a teaching assistant for a course in low-level code vulnerabilities, web application security, and the SDLC, and have authored an intentionally vulnerable web server from which students can learn. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
 
 > Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.
 
