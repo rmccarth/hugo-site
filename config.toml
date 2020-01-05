@@ -26,10 +26,10 @@ paginate = 5
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+        identifier = "Home"
+        name = "/"
+        url = "/"
       [[languages.en.menu.main]]
         identifier = "Highlights"
         name = "Highlights"
-        url = "/highlights"
+        url = "/post/highlights"
