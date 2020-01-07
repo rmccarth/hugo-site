@@ -5,10 +5,10 @@ draft: false
 ---
 
 # Writeups
-[Postman](post/htb/postman)
-[Craft](post/htb/craft)
-[Sneaky - Coming Soon](post/htb/sneaky)
-[Traverxec - Coming Soon](post/htb/traverxec)
+[Postman](../../post/htb/postman)
+[Craft](../../post/htb/craft)
+[Sneaky - Coming Soon](../../post/htb/sneaky)
+[Traverxec - Coming Soon](../../post/htb/traverxec)
 
 ```python
 python -c 'import pty; pty.spawn("/bin/bash")'
