@@ -2,9 +2,12 @@
 title: "Jerry HTB [Easy]"
 date: 2020-01-07T11:49:16-05:00
 draft: false
+description: "Jerry is an Easy machine on HackTheBox.eu | Tomcat Manager Vulnerability"
+
 ---
 
-# Jerry is an Easy machine on HackTheBox.eu
+# Description  
+Jerry is an Easy machine on HackTheBox.eu
 
 **Host Information**  
 Hostname: JERRY   

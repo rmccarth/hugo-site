@@ -2,6 +2,7 @@
 title: "Craft"
 date: 2020-01-03T18:10:15-05:00
 draft: false
+description: "Craft is a medium-difficulty vulnerable machine on HackTheBox.eu. It is rated as primarily enumeration, life-like, and involving custom exploitation."
 ---
 
 ## **Introduction**
