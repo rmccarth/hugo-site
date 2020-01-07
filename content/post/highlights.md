@@ -5,6 +5,7 @@ draft: false
 ---
 
 # Writeups
+[OpenAdmin](../../post/htb/openadmin)
 [Postman](../../post/htb/postman)
 [Craft](../../post/htb/craft)
 [Sneaky - Coming Soon](../../post/htb/sneaky)
