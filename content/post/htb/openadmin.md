@@ -1,7 +1,7 @@
 ---
 title: "OpenAdmin HTB [Easy/Medium]"
 date: 2020-01-06T20:55:28-05:00
-draft: true
+draft: false
 description: "OpenAdmin is an 'Easy' machine on HackTheBox. I say easy because this box will certainly be challenging for a beginner, but it is a good learning experience."
 ---
 
