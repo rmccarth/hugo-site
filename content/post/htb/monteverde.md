@@ -9,7 +9,7 @@ description: "Using system.sqlclient to query and decrypt local Administrator PW
 
 We find ourselves a domain user in the Azure Administrators group. We can use powershell's Invoke-SQLcmd to query the Azure AD Database "ADSync". This database allows active directory to sync the AD configurations to the cloud. The attack is explained more thoroughly in this blog: 
 
-[Azure-AD-Connect=forReadTeams](https://blog.xpnsec.com/azuread-connect-for-redteam/)
+[Azure-AD-Connect-forReadTeams](https://blog.xpnsec.com/azuread-connect-for-redteam/)
 
 The configuration files are stored in:  
 
