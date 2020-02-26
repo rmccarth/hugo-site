@@ -4,8 +4,9 @@ date: 2020-02-17T10:04:35-05:00
 draft: false
 ---
 
-## High-level take-aways from the HTB machine "JSON" 
-
+## High-level take-aways from the HTB machine "JSON"  
+   
+  
 ```json
 {
     '$type':'System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35',
