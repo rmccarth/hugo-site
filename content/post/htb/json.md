@@ -2,6 +2,7 @@
 title: "JSON (HTB)"
 date: 2020-02-17T10:04:35-05:00
 draft: false
+description: "JSON object serialization injection, powershell web-delivery, and JuicyPotato"
 ---
 
 ## High-level take-aways from the HTB machine "JSON"  
@@ -32,7 +33,7 @@ web_delivery payload: windows/x64/powershell_reverse_tcp
 }
 ```
 
-whoami /allshows SeImpersonatePrivilege Impersonate a client after authentication Enabled
+whoami /all shows SeImpersonatePrivilege Impersonate a client after authentication Enabled
 
 Juicy potato can execute a file for us as elevated user:
 
