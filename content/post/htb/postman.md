@@ -1,7 +1,7 @@
 ---
 title: "Postman HTB [Medium]"
 date: 2020-01-03T18:10:03-05:00
-draft: true
+draft: false
 description: "Postman is a vulnerable machine rated Easy on Hack the Box (hackthebox.eu). | API and Python RCE, SQL Query Vulnerabilities"
 ---
 
