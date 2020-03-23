@@ -1,7 +1,7 @@
 ---
 title: "Forest (HackTheBox)"
 date: 2020-01-22T14:55:09-05:00
-draft: true
+draft: false
 description: "Leveraging WriteDACL to Gain Domain Administrator Privileges in Active Directory"
 ---
 
