@@ -102,7 +102,7 @@ As python scripts:
 
 __python2__
 ```python
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import os
 
@@ -113,7 +113,7 @@ os.system("ExploitEducation=$(python -c 'print \"A\"*64 + \"\\x0a\\x09\\x0a\\x0d
 ```
 
 __python3__
-```python3
+```python
 #!/usr/bin/python3
 import os
 
