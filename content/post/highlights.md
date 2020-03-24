@@ -5,6 +5,32 @@ draft: false
 description: "Noteable Blog Highlights and Quick-References"
 ---
 
+# Binary Analysis
+
+__set intel syntax in objdump, and intel mnemonic's__  
+```bash
+$ objdump -M intel intel-mnemonic -d FILE
+$ objdump -M intel -d FILE
+```
+
+__extracting a hidden elf from a file__  
+
+```bash
+$ xxd FILE
+$ dd skip=52 count=64 if=67b8601 of=elf_header bs=1
+# determine elf size using the header information (offset + pagesize + number of pages)
+$ dd skip=52 count=10296 if=67b8601 of=lib5ae9b7f.so bs=1
+```
+
+__demangle a stripped binary__  
+
+```bash
+nm -D --demangle binary.elf
+```  
+
+
+
+
 # Attacking Azure AD Password Hash Synchronization
 
 **Key Reference:**   
