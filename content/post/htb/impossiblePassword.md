@@ -31,8 +31,7 @@ elf.write(target_address, b"\x74\x0c")
 #save the patched binary as run4flag
 elf.save("./run4flag")
 
-#make it executable, echo the first line to bypass the initial check, and then format for t
-he flag
+#make it executable, echo the first line to bypass the initial check, and then format for the flag
 os.system("chmod +x run4flag && echo 'SuperSeKretKey' | ./run4flag | grep 'HTB' | cut -d '*
 ' -f 3")
 ```
