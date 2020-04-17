@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2020-01-26T23:34:43-05:00
-draft: false
+draft: true
 description: "Carnegie Mellon University 3.56 | CompTIA Security+ | HackTheBox - Pro Hacker Rank"
 ---
 
